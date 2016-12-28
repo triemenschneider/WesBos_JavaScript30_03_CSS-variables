@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Variables Test</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+	<br>
+  <h1 class="display-5">Update CSS Variables with <span class="highlight">JS</span></h1>
+  <p class="lead">This a demo to show how to update CSS Variables with JavaScript. Feel free to test it.</p>
+
+	<hr class="my-2">
+	<div class="controls">
+		<div class="form-group row">
+			<label class="col-sm-2" for="spacing">Spacing</label>
+			<input type="range" name="spacing" min="5" max="40" value="5" data-unit="px">
+		</div>
+
+		<div class="form-group row">
+			<label class="col-sm-2" for="blur">Blur</label>
+			<input type="range" name="blur" min="0" max="25" value="10" data-unit="px">
+		</div>
+
+		<div class="form-group row">
+			<label class="col-sm-2" for="base">Base Color</label>
+			<input type="color" name="base" value="#ffc600">
+		</div>
+	</div>
+	<hr class="my-2">
+
+	<img class="img-fluid" src="https://unsplash.it/500/300/?random" />
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
